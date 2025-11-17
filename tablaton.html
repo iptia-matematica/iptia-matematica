@@ -17,16 +17,20 @@
 </head>
 
 <body>
-    <div> 
-	    <h1> Gran Tablatón 2025 </h1>
-		<h3> Del 17 al 21 de noviembre de 2025 </h3>
+    <div class="menu">
+	    <div> 
+	        <h1> Competencia del Tablatón </h1>
+		    <h3> Del 17 al 21 de noviembre de 2025 </h3>
+	    </div>
+	
+	    <div class="tabs">
+	        <a id="tab1" class="tab active" onclick="tab(1);"> DESCRIPCIÓN </a> <a id="tab2" class="tab" onclick="tab(2);"> RESULTADOS </a> </div>
+	    </div>
 	</div>
 	
-	<div class="tabs">
-	    <a id="tab1" class="tab active" onclick="tab(1);"> DESCRIPCIÓN </a> <a id="tab2" class="tab" onclick="tab(2);"> RESULTADOS </a> </div>
-	</div>
-	
+    
 	<div id="tabBody1"> 
+	    <div class="menu-space"> </div>
 	    <h2> Demuestra tu destreza en las tablas de Multiplicar </h2>
 		<div class="page-img"> <img src="img/tablaton.png"> </div>
 		
@@ -126,6 +130,7 @@
 	</div>
     
 	<div id="tabBody2" class="oculto">
+	    <div class="menu-space"> </div>
 	    <div class="notice-container">
 		
             <div class="notice-card">
@@ -158,21 +163,45 @@
     
 </body>
 	
-<footer>
-  <div>      
-      <h3> Semana de la Matemática - Organizada por el Departamento de Matemática del IPTIA  </h3>
+<footer class="footer">
+  <div class="footer-container">
 
-      <a href="https://www.instagram.com/iptia_panama" target="_blank">
-         Síguenos en Instagram: <strong>@iptia_panama</strong>
+    <div class="footer-logo">
+      <h2>Semana de la Matemática Iptinista</h2>
+	  <p>Instituto Profesional Técnico Industrial de Aguadulce</p>
+      <p>Departamento de Matemática</p>
+    </div>
+
+    <div class="footer-social">
+      <p>Concursos:</p>
+
+      <a href="tablaton.html" target="_blank" class="social-btn insta">
+        <img src="img/tablaton.png" alt="Tablaton">
+        Tablatón
       </a>
+	  <a href="mamparas.html" target="_blank" class="social-btn insta">
+        <img src="img/mampara.png" alt="Mamparas">
+        Mamparas
+      </a>
+    </div>
 
-      <p >
-        ©<span id="year"></span> — Todo el contenido de esta página está sujeto a derechos de autor. 
-        Queda prohibida su reproducción total o parcial sin autorización.
+    <div class="footer-info">
+      <p>
+        Promoviendo el pensamiento lógico, la creatividad y la participación estudiantil 
+        a través de actividades matemáticas.
       </p>
+    </div>
+
+    <div class="footer-copy">
+      <p>
+        © <span id="year"></span> IPTIA — Todos los derechos reservados.<br>
+        Reproducción total o parcial prohibida sin autorización.
+      </p>
+    </div>
+
   </div>
 
-  <script>    
+  <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </footer>
