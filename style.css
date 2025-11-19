@@ -769,7 +769,6 @@ tbody tr:hover {
 .popup-window {
   background: #ffffff;
   border-radius: 12px;
-  margin-top: 8rem;
   width: 90%;
   max-width: 650px;
   max-height: 80vh;
