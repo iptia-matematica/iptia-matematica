@@ -250,32 +250,87 @@
 	<div id="tabBody2" class="oculto">
 	    <div class="menu-space"> </div>
 		
-	    <div class="notice-container">
-		
-            <div class="notice-card">
-    
-                <h2 class="notice-title">Resultados del Concurso de Mamparas </h2>
+	    <div class="encabezado">
+    	    <h1>Resultados del Concurso de Mamparas</h1>
+    	    <h2>Semana de la Matemática Iptianista</h2>
+    	    <p class="fecha">Del 17 al 21 de noviembre de 2025</p>
+  	    </div>
 
-                <p class="notice-text">
-                    Los resultados oficiales del <strong>Concurso de Mamparas </strong> estarán disponibles el:
-                </p>
+    	<div class="resultados">
+    	    <section id="ranking-container">
+      	    <!-- Aquí se insertará la lista del ranking -->
+    	    </section>
+  	    </div>
+  
+    	<div class="overlay" id="popup">          
+			
+			<div class="popup-window ">
+            	<div class="popup-header">
+                	<span class="popup-title">Detalles de la Mampara</span>
+                	<button class="close-btn" onclick="cerrarPopup()">×</button>
+            	</div>
 
-                <div class="notice-date">
-                    <span class="day">18</span>
-                    <div class="date-right">
-                        <span class="month">Noviembre</span>
-                        <span class="year">2025</span>
-                    </div>
-                </div>
+            	<div class="popup-body">
+                	<h2>Mampara</h2>
+					
+					<div id="imgMampara">
+					    
+					</div>
+					
+					<div>
+					    <div> <h3> Grupo:    <span> <input type="text" id="grupo"    readonly> </input> </span> </h3> </div>
+						<div> <h3> Título:   <span> <input type="text" id="titulo"   readonly> </input> </span> </h3> </div>
+						<div> <h3> Profesor: <span> <input type="text" id="profesor" readonly> </input> </span> </h3> </div>
+					</div>
+                	   
+					<h2>Puntuación de la Mampara</h2>
+					
+                	<table class="tabla-resultados">
+                	    <thead>
+                    	    <tr>
+                        	    <th>Jurado</th>
+                        	    <th>Diseño</th>
+                            	<th>Contenido</th>
+                            	<th>Total</th>
+                        	</tr>
+                    	</thead>
+					
+                    	<tbody>
+				
+                        	<tr>
+                            	<td>Jurado 1</td>
+                            	<td><input type="text" id="diseño1" readonly></td>
+                            	<td><input type="text" id="contenido1" readonly></td>
+                            	<td><input type="text" id="total1" readonly></td>
+                        	</tr>
+                        	<tr>
+                            	<td>Jurado 2</td>
+                            	<td><input type="text" id="diseño2" readonly></td>
+                            	<td><input type="text" id="contenido2" readonly></td>
+                            	<td><input type="text" id="total2" readonly></td>
+                        	</tr>
+                        	<tr>
+                            	<td>Jurado 3</td>
+                            	<td><input type="text" id="diseño3" readonly></td>
+                            	<td><input type="text" id="contenido3" readonly></td>
+                            	<td><input type="text" id="total3" readonly></td>
+                        	</tr>
+                        	<tr>
+                            	<td>Jurado 4</td>
+                            	<td><input type="text" id="diseño4" readonly></td>
+                            	<td><input type="text" id="contenido4" readonly></td>
+                            	<td><input type="text" id="total4" readonly></td>
+                        	</tr>
+                    	</tbody>
+                	</table>
 
-                <p class="notice-subtext">
-                    El listado de ganadores será publicado en este mismo sitio. Asegúrate de estar atento. 
-                </p>
-
-                <div id="countdown" class="countdown"></div>
-
-            </div>
-        </div>			
+                	<div class="resultado-final">
+                	    <label for="resultadoTotal">Resultado Total:</label>
+                    	<input type="text" id="resultadoTotal" readonly>
+                	</div>
+            	</div>
+        	</div>
+    	</div>		
 	</div>
 	
 	<div class="espacio"></div>
@@ -320,12 +375,9 @@
 
   </div>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </footer>
 
-<script src="script.js"></script>
+<script src="mamparas.js"></script>
 
 </html>
 
