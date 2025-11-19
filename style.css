@@ -90,7 +90,7 @@ p {
   max-width: 70ch;
   margin: 0.75rem auto;
   text-align: justify;
-  color: #1B2A49;                       /* Azul grisáceo compatible con #0A3D91 */
+  color: #1B2A49;                       
   
   padding-left: 1rem;
   padding-right: 1rem;
@@ -101,7 +101,7 @@ p {
   width: 100%;
   display: flex;
   gap: 0.25rem;  
-  background-color: #E6EAF0; /* tono suave neutro */
+  background-color: #E6EAF0; 
   border-bottom: 2px solid #999;
   overflow-x: auto;
 }
@@ -143,7 +143,7 @@ p {
 .card-container{
 	width: 100%;
 	display: flex;
-    justify-content: center; /* Horizontal */
+    justify-content: center; 
 }
 
 .card {
@@ -235,7 +235,7 @@ p {
     gap: 1.6rem;
 }
 
-/* LOGO Y TÍTULO */
+
 .footer-logo h2 {
 	color: #ffffff;
     font-size: 1.4rem;
@@ -250,7 +250,7 @@ p {
 	text-align: center;
 }
 
-/* DESCRIPCIÓN */
+
 .footer-info p {
 	color: #ffffff;
     font-size: 0.92rem;
@@ -259,7 +259,7 @@ p {
     padding: 0 0.6rem;
 }
 
-/* SOCIAL */
+
 .footer-social p {
 	color: #ffffff;
     font-size: 1rem;
@@ -281,19 +281,19 @@ p {
     transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.social-btn img {
+.icono{
     width: 20px;
     height: 20px;
     object-fit: contain;
 }
 
-/* Hover */
+
 .social-btn:hover {
     transform: scale(1.05);
     box-shadow: 0px 3px 10px rgba(255,255,255,0.3);
 }
 
-/* COPYRIGHT */
+
 .footer-copy p {
 	color: #ffffff;
     font-size: 0.85rem;
@@ -301,7 +301,7 @@ p {
     line-height: 1.4;
 }
 
-/* RESPONSIVO */
+
 @media (min-width: 600px) {
     .footer-logo h2 {
         font-size: 1.6rem;
@@ -664,7 +664,7 @@ tbody tr:hover {
 	justify-content: center;
     align-items: center;
 }
-/* --- Contenedor del ranking --- */
+
 #ranking-container {
   width: 100%;
   max-width: 700px;
@@ -674,7 +674,7 @@ tbody tr:hover {
   overflow: hidden;
 }
 
-/* --- Elementos del ranking --- */
+
 .ranking-item {
   width: 100%;
   display: flex;
@@ -692,10 +692,10 @@ tbody tr:hover {
   transform: scale(1.02);
 }
 
-/* --- Posiciones destacadas (Top 5) --- */
+
 .top { background-color: #acd4f9; font-weight: bold; }
 
-/* --- Texto dentro del item --- */
+
 .posicion {
   font-size: 1.2rem;
   width: calc(10% - 5px);
@@ -762,10 +762,10 @@ tbody tr:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 999;
+  z-index: 1100;
 }
 
-/* --- Ventana principal --- */
+
 .popup-window {
   background: #ffffff;
   border-radius: 12px;
@@ -782,7 +782,7 @@ tbody tr:hover {
   to { opacity: 1; transform: scale(1); }
 }
 
-/* --- Barra superior --- */
+
 .popup-header {
   background-color: #3949ab;
   color: white;
@@ -810,7 +810,7 @@ tbody tr:hover {
   transform: scale(1.2);
 }
 
-/* --- Cuerpo de la ventana --- */
+
 .popup-body {
   width: 100%;
   padding: 1.5rem;
@@ -826,13 +826,13 @@ tbody tr:hover {
 
 .mampara-img {
   width: 100%;
-  max-height: 300px;
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 1.5rem;
 }
 
-/* --- Tabla de resultados --- */
+
 .tabla-resultados {
   width: 100%;
   border-collapse: collapse;
@@ -852,7 +852,7 @@ tbody tr:hover {
   font-weight: 600;
 }
 
-/* --- Inputs planos (no editables) --- */
+
 .tabla-resultados input[readonly],
 #resultadoTotal[readonly] {
   border: none;
@@ -864,7 +864,7 @@ tbody tr:hover {
   font-weight: 500;
 }
 
-/* --- Resultado final --- */
+
 .resultado-final {
   display: flex;
   justify-content: flex-end;
@@ -881,7 +881,7 @@ tbody tr:hover {
   font-size: 1.1rem;
 }
 
-/* --- Responsivo --- */
+
 @media (max-width: 480px) {
   .popup-body {
     padding: 1rem;
@@ -899,7 +899,7 @@ tbody tr:hover {
   }
 }
 
-/* Cards de días */
+
 .day-card {
     background: white;
     padding: 1rem;
@@ -914,7 +914,7 @@ tbody tr:hover {
     color: #0066cc;
 }
 
-/* Eventos */
+
 .event {
     padding: 0.8rem;
     border-left: 4px solid #0066cc;
@@ -947,16 +947,31 @@ tbody tr:hover {
     }
 }
 
-/* Laptops */
+
 @media (min-width: 800px) {
     .menu, .menu-space {
         height: 11rem;
     }
 }
 
-/* Pantallas grandes */
+
 @media (min-width: 1000px) {
     .menu, .menu-space {
         height: 12.5rem;
     }
+}
+
+.informacion{
+	width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  transition: transform 0.2s ease, background 0.3s ease;
+  padding-top: 10px;
+  padding-bottom: 10px; 
+}
+
+.oculto{
+	display: none;
 }
