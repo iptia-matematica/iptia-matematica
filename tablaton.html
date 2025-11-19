@@ -131,32 +131,29 @@
     
 	<div id="tabBody2" class="oculto">
 	    <div class="menu-space"> </div>
-	    <div class="notice-container">
 		
-            <div class="notice-card">
-    
-                <h2 class="notice-title">Resultados del Tablatón 2025 </h2>
-
-                <p class="notice-text">
-                    Los resultados oficiales del <strong>Tablatón </strong> estarán disponibles el:
-                </p>
-
-                <div class="notice-date">
-                    <span class="day">18</span>
-                    <div class="date-right">
-                        <span class="month">Noviembre</span>
-                        <span class="year">2025</span>
-                    </div>
-                </div>
-
-                <p class="notice-subtext">
-                    El listado de ganadores será publicado en este mismo sitio. Asegúrate de estar atento. 
-                </p>
-
-                <div id="countdown" class="countdown"></div>
-
-            </div>
-        </div>		
+	    <div class="encabezado">
+    	    <h1>Resultados del Tablatón 2025</h1>    	    
+    	    <h2>Primera Ronda</h2>
+  	    </div>
+        
+		<div class="encabezado">
+		    <h1> Pre-Media</h1>
+		</div>
+    	<div class="resultados">		    
+    	    <section id="ranking-premedia">
+      	    <!-- Aquí se insertará la lista del ranking -->
+    	    </section>
+  	    </div>
+        
+		<div class="encabezado">
+		    <h1> Media</h1>
+		</div>
+        <div class="resultados">
+    	    <section id="ranking-media">
+      	    <!-- Aquí se insertará la lista del ranking -->
+    	    </section>
+  	    </div>	
 	</div>
 	
 	<div class="espacio"></div>
@@ -200,13 +197,9 @@
     </div>
 
   </div>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </footer>
 
-<script src="script.js"></script>
+<script src="tablaton.js"></script>
 
 </html>
 
